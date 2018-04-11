@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Projeto Web Express</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+	<meta name="keywords" content="">
+	<meta name="author" content="James Almeida">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="logo"><a href="index.html"><h2>danki.code</h2></a></div>
+				<nav class="menu-desktop">
+					<ul>
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li class="selected">
+							<a href="sobre.html">Sobre</a>
+						</li>
+						<li>
+							<a href="">Contato</a>
+						</li>
+					</ul>
+				</nav>
+            
+                <nav class="menu-mobile">
+                    <h2><i class="fa fa-bars"></i></h2>
+					<ul>
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li class="selected">
+							<a href="sobre.html">Sobre</a>
+						</li>
+						<li>
+							<a href="">Contato</a>
+						</li>
+					</ul>
+				</nav>
+			<div class="clear"></div>
+		</div>
+	</header>
+    <section style="background-image: url(images/bg1.jpg)" class="title-page">
+        <div class="overlay__title-page"></div>
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Fusce vitae metus vehicula, volutpat lacus eget, molestie felis. Vivamus malesuada mauris in diam varius, sit amet scelerisque nisl tincidunt. Proin et imperdiet nisi.</p>  
+        </div>
+    </section>
+    
+    <section class="contato">
+        <div class="container">
+            <div class="w60 formulario">
+                <h2>Entre em contato que estaremos respondendo o mais breve possivel!</h2>
+                <form>
+                    <div class="w50">
+                        <input type="text"  placeholder="Nome..." required/>
+                    </div>
+                    <div class="w50">
+                        <input type="text" placeholder="Sobrenome..." required />
+                    </div>
+                    <div class="w100">
+                        <input type="email" placeholder="E-mail..." required />
+                    </div>
+                    <div class="w100">
+                        <textarea placeholder="Sua mensagem..."></textarea>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="w40 tags-form">
+                <h2><i class="fa fa-comment"></i>Fale com a nossa equipe!</h2>
+                <p>Fusce vitae metus vehicula, volutpat lacus eget, molestie felis.</p>
+                
+                <p class="tag-contato"><i class="fa fa-facebook"></i> /DankiCode</p>
+                <p class="tag-contato"><i class="fa fa-facebook"></i> /DankiCode</p>
+                <p class="tag-contato"><i class="fa fa-facebook"></i> /DankiCode</p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section>
+    
+    <footer class="footer1">
+        <div class="container">
+            <div class="w33">
+                <h2>Onde Estamos!</h2>
+                <p><i class="fa fa-phone" aria-hidden="true"></i> (11)4747-4747</p>
+                <p><i class="fa fa-map-pin" aria-hidden="true"> R. Fulano de Tal,35 Jd.Saude - Suzano</i></p>
+            </div>
+            
+            <div class="w33">
+                <h2>Links Uteis</h2>
+                <a href="">Danki Code</a>
+                <a href="">W3Schools</a>  
+            </div>
+            
+            <div class="w33">
+                <h2>Sigam-nos</h2>
+                <div class="group-icon">
+                    <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </footer>
+    
+    <footer class="footer2">
+        <p>Todos os direitos reservados</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        $('nav.menu-mobile h2').click(function(){
+            $('nav.menu-mobile ul').slideToggle();    
+        });
+    </script>
+</body>
+</html>
